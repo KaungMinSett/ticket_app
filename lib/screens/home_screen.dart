@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
+import 'package:ticket_app/base/widgets/app_double_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeedf2),
+      backgroundColor: AppStyles.bgColor,
       body: ListView(
         children: [
           const SizedBox(height: 40,),
@@ -71,10 +72,16 @@ class HomeScreen extends StatelessWidget {
                       Text("Search "),
                     ],
                   ),
-                )
+                ),
+                const SizedBox(height: 40,),
+                AppDoubleText(bigText: 'Upcoming flights',smallText: 'View all',),
+                const SizedBox(height: 40,),
+                AppDoubleText(bigText: 'Upcoming meetings',smallText: 'View all',)
+
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );
