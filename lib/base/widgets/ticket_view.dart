@@ -9,7 +9,8 @@ import 'package:ticket_app/base/widgets/ticket_text_style.dart';
 import 'package:ticket_app/base/widgets/ticket_text_style_small.dart';
 
 class TicketView extends StatelessWidget {
-  const TicketView({super.key});
+  final Map<String, dynamic> ticket;
+  const TicketView({super.key, required this.ticket});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class TicketView extends StatelessWidget {
                     // departure & destination code and icon
                     Row(
                       children: [
-                       TextStyleThird(text: "NYC"),
+                       TextStyleThird(text: ticket["from"]["code"]),
                         Expanded(child: Container(
 
                         )),
@@ -67,7 +68,7 @@ class TicketView extends StatelessWidget {
                         Expanded(child: Container(
 
                         )),
-                        TextStyleThird(text: "LDN"),
+                        TextStyleThird(text: ticket["to"]["code"]),
 
 
                       ],
@@ -78,19 +79,19 @@ class TicketView extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 100,
-                          child: TextStyleFourth(text: "New-York"),
+                          child: TextStyleFourth(text: ticket["from"]["name"]),
                         ),
                         Expanded(child: Container(
 
                         )),
 
-                        TextStyleFourth(text: "8H 30M"),
+                        TextStyleFourth(text: ticket["flying_time"]),
                         Expanded(child: Container(
 
                         )),
                         SizedBox(
                           width: 100,
-                          child: TextStyleFourth(text: "London",align: TextAlign.start,)
+                          child: TextStyleFourth(text: ticket["to"]["name"],align: TextAlign.end,)
                         ),
 
                       ],
@@ -126,14 +127,14 @@ class TicketView extends StatelessWidget {
                         bottomLeft: Radius.circular(21)
                         , bottomRight: Radius.circular(21))
                 ),
-                child: const Column(
+                child:  Column(
                   children: <Widget>[
                     // departure & destination code and icon
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         AppColumnTextLayout(
-                            topText: "1 DEC",
+                            topText: ticket["date"],
                             bottomText: "Date",
                             alignment: CrossAxisAlignment.start,
 
@@ -141,12 +142,12 @@ class TicketView extends StatelessWidget {
 
 
                         AppColumnTextLayout(
-                            topText: "8:00 AM",
+                            topText: ticket["departure_time"],
                             bottomText: "Departure time",
                           alignment: CrossAxisAlignment.center,
                         ),
                         AppColumnTextLayout(
-                            topText: "11",
+                            topText: ticket["number"].toString(),
                             bottomText: "Number",
                           alignment: CrossAxisAlignment.end,
                         ),

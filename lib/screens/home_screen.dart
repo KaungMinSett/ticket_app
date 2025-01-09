@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
+import 'package:ticket_app/base/utils/all_json.dart';
 import 'package:ticket_app/base/widgets/app_double_text.dart';
 import 'package:ticket_app/base/widgets/ticket_view.dart';
 
@@ -15,7 +16,9 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: AppStyles.bgColor,
       body: ListView(
         children: [
-          const SizedBox(height: 40,),
+          const SizedBox(
+            height: 40,
+          ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
@@ -23,35 +26,23 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                     Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          "Good Morning",
-                          style: AppStyles.headlineStyle3
-                        ),
+                        Text("Good Morning", style: AppStyles.headlineStyle3),
                         const SizedBox(
                           height: 5,
                         ),
-                        Text(
-                          "Book Tickets",
-                          style: AppStyles.headlineStyle1
-                        )
+                        Text("Book Tickets", style: AppStyles.headlineStyle1)
                       ],
                     ),
                     Container(
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: const DecorationImage(
-                            image: AssetImage(
-                              AppMedia.logo
-                            )
-
-                        )
-                          
-                      ),
+                          borderRadius: BorderRadius.circular(10),
+                          image: const DecorationImage(
+                              image: AssetImage(AppMedia.logo))),
                     )
                   ],
                 ),
@@ -59,33 +50,43 @@ class HomeScreen extends StatelessWidget {
                   height: 25,
                 ),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: const Color(0xfff4f6fd),
-
-
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color(0xfff4f6fd),
                   ),
                   child: const Row(
-
                     children: [
-                      Icon(FluentSystemIcons.ic_fluent_search_regular, color: Color(0xffbfc205),),
+                      Icon(
+                        FluentSystemIcons.ic_fluent_search_regular,
+                        color: Color(0xffbfc205),
+                      ),
                       Text("Search "),
                     ],
                   ),
                 ),
-                const SizedBox(height: 40,),
-                AppDoubleText(bigText: 'Upcoming flights',smallText: 'View all',),
-                const SizedBox(height: 20,),
-
-               TicketView(
-
-               )
-
+                const SizedBox(
+                  height: 40,
+                ),
+                AppDoubleText(
+                  bigText: 'Upcoming flights',
+                  smallText: 'View all',
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                 SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: ticketList.take(3).map((singleTicket) =>
+                        TicketView(ticket: singleTicket)
+                    ).toList(),
+                  ),
+                )
               ],
             ),
           ),
-
         ],
       ),
     );
