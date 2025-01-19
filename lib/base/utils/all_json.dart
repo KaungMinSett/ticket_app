@@ -13,6 +13,7 @@ List<Map<String, dynamic>> ticketList = [
     'departure_time':"08:00 AM",
     "number":23
   },
+
   {
     'from': {
       'code':"DK",
@@ -40,5 +41,73 @@ List<Map<String, dynamic>> ticketList = [
     'date': "10 MAY",
     'departure_time':"09:00 AM",
     "number":45
+  },
+  {
+    'from': {
+      'code':"YGN",
+      'name':"Yangon"
+    },
+    'to': {
+      'code':"MDY",
+      'name':"Mandalay"
+    },
+    'flying_time': '3H 30M',
+    'date': "18 MAY",
+    'departure_time':"10:00 AM",
+    "number":11
+  },
+
+  {
+    'from': {
+      'code':"BGN",
+      'name':"Bagan"
+    },
+    'to': {
+      'code':"BGO",
+      'name':"Bago"
+    },
+    'flying_time': '2H 00M',
+    'date': "1 DEC",
+    'departure_time':"05:00 PM",
+    "number":13
+  },
+
+
+
+];
+
+List<Map<String, dynamic>> hotelList = [
+  {
+    'image': 'one.png',
+    'place': 'Open Space',
+    'destination': 'London',
+    'price': 25
+  },
+  {
+    'image': 'two.png',
+    'place': 'Global Will',
+    'destination': 'London',
+    'price': 40
+  },
+  {
+    'image': 'three.png',
+    'place': 'Tallest Building',
+    'destination': 'Dubai',
+    'price': 68
   },
 ];
+
+class AppRoutes{
+
+  static const homePage = "/";
+
+  static const allTickets = "/all_tickets";
+
+  static const ticketScreen = "/ticket_screen";
+
+  static const allHotels = "/all_hotels";
+
+  static const hotelDetail = "/hotel_detail";
+
+}
+
