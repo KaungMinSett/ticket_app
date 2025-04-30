@@ -26,7 +26,10 @@ class SearchScreen extends StatelessWidget {
               style: AppStyles.headlineStyle1
                   .copyWith(fontSize: 40, letterSpacing: 2.00)),
           const SizedBox(height: 20),
-          const AppTicketTabs(),
+          const AppTicketTabs(
+            firstTab: "All tickets",
+            secondTab: "Hotels",
+          ),
           const SizedBox(
             height: 20,
           ),
@@ -40,14 +43,17 @@ class SearchScreen extends StatelessWidget {
             height: 20,
           ),
           const FindTicket(),
-          const SizedBox(height: 40,),
+          const SizedBox(
+            height: 40,
+          ),
           AppDoubleText(
               bigText: 'Upcoming Flights',
               smallText: 'View all',
               func: () => Navigator.pushNamed(context, "/all_tickets")),
-          const SizedBox(height: 15,),
+          const SizedBox(
+            height: 15,
+          ),
           const TicketPromotion()
-
         ],
       ),
     );

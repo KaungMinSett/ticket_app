@@ -5,11 +5,12 @@ class AppColumnTextLayout extends StatelessWidget {
   final String topText;
   final String bottomText;
   final CrossAxisAlignment alignment;
+  final Color textColor;
   const AppColumnTextLayout(
       {super.key,
       required this.topText,
       required this.bottomText,
-      required this.alignment });
+      required this.alignment, required this.textColor });
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +18,17 @@ class AppColumnTextLayout extends StatelessWidget {
       crossAxisAlignment: alignment,
       children: [
         TextStyleThird(
+
           text: topText,
+          textColor: textColor,
         ),
         const SizedBox(
           height: 5,
         ),
-        TextStyleThird(text: bottomText),
+        TextStyleThird(
+            text: bottomText,
+          textColor: textColor,
+        ),
       ],
     );
   }
