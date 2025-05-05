@@ -6,14 +6,18 @@ class TextStyleFourth extends StatelessWidget {
   final String text;
   final TextAlign align;
   final Color textColor;
-  const TextStyleFourth({super.key, required this.text, this.align = TextAlign.start,  this.textColor = Colors.white});
+  const TextStyleFourth(
+      {super.key,
+      required this.text,
+      this.align = TextAlign.start,
+      this.textColor = Colors.white});
 
   @override
   Widget build(BuildContext context) {
-    return  Text(
+    return Text(
       text,
       textAlign: align,
-      style: AppStyles.headlineStyle4.copyWith(color: textColor) ,
+      style: AppStyles.headlineStyle4.copyWith(color: textColor),
     );
   }
 }

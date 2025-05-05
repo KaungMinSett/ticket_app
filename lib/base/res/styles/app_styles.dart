@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 Color primary = const Color(0xff687daf);
 
 class AppStyles {
@@ -33,9 +34,9 @@ class AppStyles {
     fontSize: 17,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle headlineStyle4 = const TextStyle(
+  static TextStyle headlineStyle4 =  const TextStyle(
     fontSize: 14,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
   );
 
   static TextStyle textStyle = TextStyle(
