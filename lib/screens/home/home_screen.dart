@@ -84,10 +84,20 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: ticketList.take(3).map((singleTicket) =>
-                        TicketView(
-                          ticket: singleTicket,
-                          upperColor: AppStyles.ticketBlue,
-                          lowerColor: AppStyles.ticketOrange,
+                        GestureDetector(
+                          onTap: (){
+                            var index = ticketList.indexOf(singleTicket);
+                            Navigator.pushNamed(context, AppRoutes.ticketScreen,
+                                arguments: {
+                                  'index':index
+                                }
+                            );
+                          },
+                          child: TicketView(
+                            ticket: singleTicket,
+                            upperColor: AppStyles.ticketBlue,
+                            lowerColor: AppStyles.ticketOrange,
+                          ),
                         )
                     ).toList(),
                   ),

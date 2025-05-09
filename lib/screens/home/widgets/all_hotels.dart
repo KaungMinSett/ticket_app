@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/app_routes.dart';
 import 'package:ticket_app/base/utils/all_json.dart';
 
 import '../../../base/res/styles/app_styles.dart';
@@ -24,21 +25,31 @@ class AllHotels extends StatelessWidget {
         title: const Text("All Hotels"),
 
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-              crossAxisSpacing: 13.0,
-              mainAxisSpacing: 14.0,
-              childAspectRatio: 0.9,
+      body: GestureDetector(
+        onTap: (){
+          Navigator.pushNamed(context, AppRoutes.hotelDetail);
 
+        },
+        child: Container(
+
+          margin: EdgeInsets.only(left: 8),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  crossAxisSpacing: 13.0,
+                  mainAxisSpacing: 14.0,
+                  childAspectRatio: 0.9,
+
+                ),
+                itemCount: hotelList.length,
+                itemBuilder: (context, index){
+                  var singleHotel = hotelList[index];
+                  return HotelGridView(hotel: singleHotel);
+                }
             ),
-            itemCount: hotelList.length,
-            itemBuilder: (context, index){
-              var singleHotel = hotelList[index];
-              return HotelGridView(hotel: singleHotel);
-            }
+          ),
         ),
       ),
 
