@@ -101,11 +101,13 @@ class _HotelDetailState extends State<HotelDetail> {
             height: 200.0,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {
+                itemCount: hotelList[index]['images'].length,
+                itemBuilder: (context, imagesIndex) {
                   return Container(
                     margin: EdgeInsets.all(16),
-                    child: Image.network("https://placehold.co/200x200.png"),
+                    child: Image.asset(
+                      "assets/images/${hotelList[index]["images"][imagesIndex]}",
+                    ),
                   );
                 }),
           )
