@@ -25,7 +25,6 @@ Here are the main screens included in this app:
 
 ## 📷 Screenshots
 
-> *Note: Please replace the placeholder image names below with your actual screenshot files (e.g., `home_screen.png`, etc.).*
 
 | Screen         | Image                                                                                                                                     |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
