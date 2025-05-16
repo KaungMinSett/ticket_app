@@ -26,15 +26,15 @@ Here are the main screens included in this app:
 ## 📷 Screenshots
 
 
-| Screen       | Image                                              |
-|--------------|----------------------------------------------------|
-| Home         | ![Home Screen] (assets/screenshots/home.png) |                                                                                                              |
-| Ticket       | ![Ticket Screen]!(assets/screenshots/tickets.png)                                |                                                                                                             |
-| Search       | ![Search Screen]!(assets/screenshots/search.png)                                |                                                                                                            |
-| Profile      | ![Profile Screen]!  (assets/screenshots/profile.png)                             |
-| All Hotels   | ![All Hotels Screen]!   (assets/screenshots/all_hotels.png)                         |
-| All Tickets  | ![All Tickets Screen]!(assets/screenshots/all_tickets.png)                           |
-| Hotel Detail | ![Hotel Detail Screen]!(assets/screenshots/hotel_detail.png)                          |
+| Screen       | Image                                             |
+|--------------|---------------------------------------------------|
+| Home         | ![Home Screen](assets/screenshots/home.png) |                                                                                                              |
+| Ticket       | ![Ticket Screen](assets/screenshots/tickets.png)                          |                                                                                                             |
+| Search       | ![Search Screen](assets/screenshots/search.png)                           |                                                                                                            |
+| Profile      | ![Profile Screen](assets/screenshots/profile.png)                         |
+| All Hotels   | ![All Hotels Screen](assets/screenshots/all_hotels.png)                   |
+| All Tickets  | ![All Tickets Screen](assets/screenshots/all_tickets.png)                 |
+| Hotel Detail | ![Hotel Detail Screen](assets/screenshots/hotel_detail.png)               |
 
 ---
 
