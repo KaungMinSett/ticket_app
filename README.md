@@ -28,7 +28,7 @@ Here are the main screens included in this app:
 
 | Screen         | Image                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------|
-| Home           | <img src="assets/screenshots/home.png" width="300" alt="Home Screen" />                 |
+| Home           | <img src="assets/screenshots/home.png" width="300" height="400" alt="Home Screen" />     |
 | Ticket         | <img src="assets/screenshots/tickets.png" width="300" alt="Ticket Screen" />            |
 | Search         | <img src="assets/screenshots/search.png" width="300" alt="Search Screen" />             |
 | Profile        | <img src="assets/screenshots/profile.png" width="300" alt="Profile Screen" />           |
