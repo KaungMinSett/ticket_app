@@ -26,15 +26,15 @@ Here are the main screens included in this app:
 ## 📷 Screenshots
 
 
-| Screen       | Image                                             |
-|--------------|---------------------------------------------------|
-| Home         | ![Home Screen](assets/screenshots/home.png) |                                                                                                              |
-| Ticket       | ![Ticket Screen](assets/screenshots/tickets.png)                          |                                                                                                             |
-| Search       | ![Search Screen](assets/screenshots/search.png)                           |                                                                                                            |
-| Profile      | ![Profile Screen](assets/screenshots/profile.png)                         |
-| All Hotels   | ![All Hotels Screen](assets/screenshots/all_hotels.png)                   |
-| All Tickets  | ![All Tickets Screen](assets/screenshots/all_tickets.png)                 |
-| Hotel Detail | ![Hotel Detail Screen](assets/screenshots/hotel_detail.png)               |
+| Screen         | Image                                                                                   |
+|----------------|-----------------------------------------------------------------------------------------|
+| Home           | <img src="assets/screenshots/home.png" width="300" alt="Home Screen" />                 |
+| Ticket         | <img src="assets/screenshots/tickets.png" width="300" alt="Ticket Screen" />            |
+| Search         | <img src="assets/screenshots/search.png" width="300" alt="Search Screen" />             |
+| Profile        | <img src="assets/screenshots/profile.png" width="300" alt="Profile Screen" />           |
+| All Hotels     | <img src="assets/screenshots/all_hotels.png" width="300" alt="All Hotels Screen" />     |
+| All Tickets    | <img src="assets/screenshots/all_tickets.png" width="300" alt="All Tickets Screen" />   |
+| Hotel Detail   | <img src="assets/screenshots/hotel_detail.png" width="300" alt="Hotel Detail Screen" /> |
 
 ---
 
