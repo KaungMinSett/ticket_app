@@ -290,10 +290,15 @@ class ProfileScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 30,),
-                Text(
-                  "How to get more miles",
-                  style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor,
-                  fontWeight: FontWeight.w500),
+                InkWell(
+                  onTap: (){
+                    print("tapped");
+                  },
+                  child: Text(
+                    "How to get more miles",
+                    style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor,
+                    fontWeight: FontWeight.w500),
+                  ),
                 )
               ],
             ),
