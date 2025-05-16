@@ -26,15 +26,15 @@ Here are the main screens included in this app:
 ## 📷 Screenshots
 
 
-| Screen         | Image                                                                                                                     |
-|----------------|---------------------------------------------------------------------------------------------------------------------------|
-| Home           | ![Home Screen] ![Screenshot 2025-05-14 at 00.01.31.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.01.31.png)  |
-| Ticket         | ![Ticket Screen]![Screenshot 2025-05-14 at 00.03.16.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.03.16.png) |
-| Search         | ![Search Screen]![Screenshot 2025-05-14 at 00.02.32.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.02.32.png) |
-| Profile        | ![Profile Screen]![Screenshot 2025-05-14 at 00.03.31.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.03.31.png) |
-| All Hotels     | ![All Hotels Screen]![Screenshot 2025-05-14 at 00.27.45.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.27.45.png) |
-| All Tickets    | ![All Tickets Screen]![Screenshot 2025-05-14 at 00.01.50.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.01.50.png)         |
-| Hotel Detail   | ![Hotel Detail Screen]![Screenshot 2025-05-14 at 00.02.55.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.02.55.png)        |
+| Screen         | Image                                                                                                                  |
+|----------------|------------------------------------------------------------------------------------------------------------------------|
+| Home           | ![Screenshot 2025-05-14 at 00.01.31.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.01.31.png) |
+| Ticket         |![Screenshot 2025-05-14 at 00.03.16.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.03.16.png) |
+| Search         | ![Screenshot 2025-05-14 at 00.02.32.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.02.32.png) |
+| Profile        | ![Screenshot 2025-05-14 at 00.03.31.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.03.31.png) |
+| All Hotels     | ![Screenshot 2025-05-14 at 00.27.45.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.27.45.png) |
+| All Tickets    | ![Screenshot 2025-05-14 at 00.01.50.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.01.50.png)      |
+| Hotel Detail   | ![Screenshot 2025-05-14 at 00.02.55.png](..%2F..%2FDesktop%2FScreenshot%202025-05-14%20at%2000.02.55.png)     |
 
 ---
 
